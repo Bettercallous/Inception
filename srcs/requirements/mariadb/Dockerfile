@@ -14,6 +14,4 @@ COPY conf/create_db.sh .
 
 RUN chmod +x create_db.sh
 
-EXPOSE 3306
-
 CMD ["/create_db.sh"]
