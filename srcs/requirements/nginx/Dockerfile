@@ -10,6 +10,6 @@ EXPOSE 443
 
 # RUN chmod +x script.sh
 
-COPY conf/nginx.conf /etc/nginx/conf.d/
+# COPY conf/nginx.conf /etc/nginx/conf.d/
 
 CMD ["nginx", "-g", "daemon off;"]
