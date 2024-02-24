@@ -14,4 +14,4 @@ COPY conf/create_db.sh .
 
 RUN chmod +x create_db.sh
 
-CMD ["/create_db.sh"]
+CMD ["/create_db.sh", "mysql < db1.sql"]
