@@ -1,28 +1,43 @@
 version: '3'
 
 services:
-  # mariadb:
-  #   container_name: mariadb
-  #   build: ./requirements/mariadb/.
-  #   env_file:
-  #     - .env
-  #   volumes:
-  #     - mariadb_data:/var/lib/mysql
-  #   restart: always
-
-  nginx:
-    container_name: nginx
-    build: ./requirements/nginx/.
-    ports:
-      - "443:443"
-    # depends_on:
-    #   - wordpress
-    volumes:
-      - ./requirements/nginx/conf/:/etc/nginx/conf.d
-      - ./requirements/tools/:/etc/nginx/ssl
-      - ./requirements/nginx/fol/:/etc/www/html
+  mariadb:
+    container_name: mariadb
+    build: ./requirements/mariadb/.
+    env_file:
+      - .env
+    # networks:
+    #   - inception
+    # volumes:
+    #   - mariadb_data:/var/lib/mysql
     restart: always
 
-volumes:
-  mariadb_data:
-    driver: local
+#   nginx:
+#     container_name: nginx
+#     build: ./requirements/nginx/.
+#     ports:
+#       - "443:443"
+#     # depends_on:
+#     #   - wordpress
+#     volumes:
+#       - ./requirements/nginx/conf/:/etc/nginx/conf.d
+#       - ./requirements/tools/:/etc/nginx/ssl
+#       - ./requirements/nginx/fol/:/etc/www/html
+#     restart: always
+  
+#   wordpress:
+#     container_name: wordpress
+#     build: ./requirements/wordpress/.
+#     networks:
+#       - inception
+#     env_file:
+#       - .env
+#     restart: always
+
+# networks:
+#   - inception:
+#     name: inception
+
+# volumes:
+#   mariadb_data:
+#     driver: local
