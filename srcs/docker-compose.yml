@@ -8,8 +8,8 @@ services:
       - .env
     # networks:
     #   - inception
-    # volumes:
-    #   - mariadb_data:/var/lib/mysql
+    volumes:
+      - mariadb_data:/var/lib/mysql
     restart: always
 
 #   nginx:
@@ -38,6 +38,6 @@ services:
 #   - inception:
 #     name: inception
 
-# volumes:
-#   mariadb_data:
-#     driver: local
+volumes:
+  mariadb_data:
+    driver: local
