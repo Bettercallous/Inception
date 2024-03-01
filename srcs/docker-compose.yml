@@ -24,7 +24,7 @@ services:
     volumes:
       - ./requirements/nginx/conf/:/etc/nginx/conf.d
       - ./requirements/tools/:/etc/nginx/ssl
-      - ./requirements/nginx/fol/:/etc/www/html
+      # - ./requirements/nginx/fol/:/etc/www/html
       - wp-vol:/var/www/html
     restart: always
   
