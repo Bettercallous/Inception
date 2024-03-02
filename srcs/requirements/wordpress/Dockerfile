@@ -1,11 +1,11 @@
 FROM debian:bullseye
 
-RUN apt-get update -y && apt-get upgrade -y && apt-get install php-fpm php7.4-mysql -y && apt-get install curl -y
+RUN apt-get update -y && apt-get upgrade -y \
+    && apt-get install php-fpm php7.4-mysql -y \
+    && apt-get install curl -y
 
 COPY ./conf/wp-config-create.sh .
 
 RUN chmod +x wp-config-create.sh
-
-RUN mkdir -p /run/php/
 
 CMD ["/wp-config-create.sh"]

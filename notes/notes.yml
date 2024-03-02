@@ -1,0 +1,32 @@
+mariadb:
+    - mysql language
+    - The mariadb command is a command-line client for MariaDB, which is a popular open-source relational database management system (RDBMS) and a drop-in replacement for MySQL. This command allows users to interact with MariaDB databases through the command line. It provides a way to execute SQL queries, manage databases, users, and perform various administrative tasks.
+    - The -e option in the mariadb command stands for "execute." It allows you to specify a single SQL statement to be executed by MariaDB immediately after connecting.
+    - The file 50-server.cnf is typically a configuration file used by MariaDB (or MySQL) server instances. In MySQL/MariaDB, configuration files are used to specify various settings and parameters that govern the behavior of the database server.
+    - SELECT User, Host FROM mysql.user; (to show user)
+nginx:
+    - TLSv1.2 and TLSv1.3
+    - SSL
+    
+wordpress:
+    - FastCGI
+    - PHP-FPM
+
+docker:
+    - containerization
+    - container vs vm
+    - PID 1
+    - daemon
+    - RUN vs CMD
+    - CMD VS ENTRYPOINT
+    
+    - docker networks
+    - docker volumes
+    - docker cache
+
+other:
+    - sed
+    - https
+    - self assigned certificate
+    - uri = Uniform Resource Identifier
+    - url = Uniform Resource Locator

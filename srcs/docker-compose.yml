@@ -1,4 +1,4 @@
-version: '3'
+version: '3.8'
 
 services:
   mariadb:
@@ -24,7 +24,6 @@ services:
     volumes:
       - ./requirements/nginx/conf/:/etc/nginx/conf.d
       - ./requirements/tools/:/etc/nginx/ssl
-      # - ./requirements/nginx/fol/:/etc/www/html
       - wp-vol:/var/www/html
     restart: always
   
