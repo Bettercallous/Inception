@@ -42,3 +42,26 @@ inportant:
 https://www.cloudflare.com/learning/ssl/transport-layer-security-tls/#:~:text=Transport%20Layer%20Security%2C%20or%20TLS,web%20browsers%20loading%20a%20website.
 
 https://www.cloudflare.com/learning/ssl/what-is-an-ssl-certificate/
+
+- WordPress:
+
+what is WP-CLI:
+
+WP-CLI is the command line interface for WordPress. It is a tool that allows you to interact with your WordPress site from the command line, it is used for a lot of purposes, such as automating tasks, debugging problems, installing/removing plugins alongside themes, managing users and roles, exporting/importing data, run database queries, and so much more...
+
+What is CGI?
+
+CGI stands for “Common Gateway Interface.” It is a standard protocol that defines how web servers can interact with external applications or scripts to process HTTP requests and generate dynamic web content.
+When a client (usually a web browser) sends an HTTP request to a web server, the server processes the request and, in the case of static content (like HTML and images), directly serves the requested file. However, when the requested content is dynamic and needs to be generated on the fly, the server can use CGI to communicate with external programs to handle the processing.
+
+what is FastCGI?
+
+FastCGI is a variation of the Common Gateway Interface (CGI) that addresses the performance and scalability limitations of traditional CGI. It is a protocol that allows web servers to communicate with external application processes efficiently, enabling dynamic content generation for web applications.
+With traditional CGI, a new process is spawned for each request, leading to a significant performance overhead. FastCGI improves upon this by introducing a persistent application process pool that remains alive even after processing a request. This process pool eliminates the need to start a new process for each incoming request, reducing the overhead and providing better performance and resource utilization.
+
+What is PHP-FPM?
+
+PHP-FPM (FastCGI Process Manager) is an implementation of the FastCGI protocol specifically designed for use with PHP. It works by starting a pool of worker processes that are responsible for executing PHP scripts. When a web server receives a request for a PHP script, it passes the request to one of the worker processes, which then executes the script and returns the result to the web server. This allows PHP scripts to be executed more efficiently, as the worker processes can be reused for multiple requests.
+
+
+In summary, CGI is the simplest and oldest method for executing server-side scripts but suffers from performance overhead. FastCGI improves upon CGI by introducing a persistent process pool, resulting in better performance. PHP-FPM, on the other hand, is a specific FastCGI implementation tailored for PHP execution, providing superior performance, scalability, and security for serving PHP applications. For modern PHP applications, PHP-FPM is the recommended method for handling dynamic content.

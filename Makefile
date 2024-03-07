@@ -15,7 +15,8 @@ start:
 stop:
 	@docker-compose -f ./srcs/docker-compose.yml stop
 
-re: down
+re:
+	@docker-compose -f ./srcs/docker-compose.yml down -v
 	@docker-compose -f ./srcs/docker-compose.yml up --build -d
 
 logs:

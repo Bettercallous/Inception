@@ -12,7 +12,7 @@ docker:
     - daemon
     - RUN vs CMD
     - CMD VS ENTRYPOINT
-    
+
     - docker networks
     - docker volumes
     - docker cache
