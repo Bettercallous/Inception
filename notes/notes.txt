@@ -1,0 +1,44 @@
+
+- mariadb:
+
+what is mariadb:
+
+MariaDB is like a digital filing system for organizing and storing data. It helps applications manage information efficiently, ensuring security, reliability, and easy access to data.
+MariaDB helps organize your data into neat categories (called tables), making it easy to find and manage. For example, you might have a table for customer information and another for product details.
+
+mariadb host:
+
+if your MariaDB container is named mariadb_container, you can use mariadb_container as the database host when configuring WordPress to connect to the MariaDB container. Docker's built-in DNS resolution will resolve this name to the IP address of the MariaDB container, allowing WordPress to establish a connection to the MariaDB database server.
+when running MariaDB and WordPress in separate Docker containers, you can use either the container name, service name, or IP address of the MariaDB container as the database host within the WordPress configuration.
+
+The mariadb command is a command-line client for MariaDB, which is a popular open-source relational database management system (RDBMS) and a drop-in replacement for MySQL. This command allows users to interact with MariaDB databases through the command line. It provides a way to execute SQL queries, manage databases, users, and perform various administrative tasks.
+
+The -e option in the mariadb command stands for "execute." It allows you to specify a single SQL statement to be executed by MariaDB immediately after connecting.
+
+The file 50-server.cnf is typically a configuration file used by MariaDB (or MySQL) server instances. In MySQL/MariaDB, configuration files are used to specify various settings and parameters that govern the behavior of the database server.
+    - SELECT User, Host FROM mysql.user; (to show user)
+
+- nginx:
+
+what is nginx:
+NGINX is open source software for web serving, reverse proxying, caching, load balancing, media streaming, and more. It started out as a web server designed for maximum performance and stability. In addition to its HTTP server capabilities.
+
+Nginx is a web server software that helps deliver web pages to users when they visit a website. It's like a traffic cop for the internet, directing incoming requests to the right place and handling them quickly and efficiently.
+
+Web servers are responsible for making your website accessible to browsers and users.
+
+
+what is mkcert:
+mkcert is a tool used for generating self-signed certificates for local development purposes. It simplifies the process of creating trusted certificates that can be used to secure local servers and test environments.
+
+mkcert simplifies the process of generating trusted self-signed certificates for local development, using OpenSSL under the hood.
+
+what are SSL and TLS:
+
+SSL and TLS are cryptographic protocols used to secure communication over the internet, while HTTPS is the secure version of HTTP that uses either SSL or TLS to encrypt data transmitted between a web server and a web browser.
+
+inportant:
+
+https://www.cloudflare.com/learning/ssl/transport-layer-security-tls/#:~:text=Transport%20Layer%20Security%2C%20or%20TLS,web%20browsers%20loading%20a%20website.
+
+https://www.cloudflare.com/learning/ssl/what-is-an-ssl-certificate/
