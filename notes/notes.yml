@@ -36,3 +36,8 @@ docker caching
 volumes and networks
 
 TLS
+
+
+Check if redis is working:
+    - docker exec -it redis redis-cli && type ping, you should get pong
+    - docker exec -it redis redis-cli monitor (will output OK)
