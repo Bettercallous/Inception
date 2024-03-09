@@ -72,6 +72,17 @@ services:
         networks:
             - inception
         restart: always
+
+    website:
+        container_name: website
+        build: ./requirements/bonus/website/.
+        init: true
+        ports:
+            - "80:80"
+        networks:
+            - inception
+        restart: always
+
 networks:
     inception:
         name: inception
