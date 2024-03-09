@@ -63,7 +63,15 @@ services:
             - inception
         restart: always
 
-
+    cadvisor:
+        container_name: cadvisor
+        build: ./requirements/bonus/cadvisor/.
+        init: true
+        ports:
+            - "150:150"
+        networks:
+            - inception
+        restart: always
 networks:
     inception:
         name: inception
