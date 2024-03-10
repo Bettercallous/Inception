@@ -78,9 +78,12 @@ services:
         build: ./requirements/bonus/website/.
         init: true
         ports:
-            - "80:80"
+            - "4000:80"
         networks:
             - inception
+        volumes:
+            - ./requirements/bonus/website/conf/:/etc/nginx/conf.d/
+            - ./requirements/bonus/website/tools/:/var/www/html/
         restart: always
 
 networks:
