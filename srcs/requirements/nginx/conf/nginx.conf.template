@@ -1,0 +1,20 @@
+server {
+	listen 443 ssl;
+
+	server_name $DOMAIN_NAME;
+
+	ssl_certificate $CERT;
+	ssl_certificate_key $CERT_KEY;
+
+	ssl_protocols TLSv1.2 TLSv1.3;
+
+	index index.php;
+	root /var/www/html;
+
+	location ~ \.php$ {
+        try_files ${DOLLAR}uri = 404;
+        fastcgi_pass wordpress:9000;
+        include fastcgi_params;
+        fastcgi_param SCRIPT_FILENAME ${DOLLAR}document_root${DOLLAR}fastcgi_script_name;
+    }
+}
