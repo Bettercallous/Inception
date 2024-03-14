@@ -26,7 +26,7 @@ services:
         networks:
         - inception
         volumes:
-            - ./requirements/tools/:/etc/nginx/ssl
+            - ./requirements/tools/:/etc/nginx/ssl:ro
             - wp-vol:/var/www/html
         restart: always
   
@@ -72,6 +72,11 @@ services:
             - "150:150"
         networks:
             - inception
+        volumes:
+            - /:/rootfs:ro
+            - /var/run:/var/run:ro
+            - /sys:/sys:ro
+            - /var/lib/docker/:/var/lib/docker:ro
         restart: always
 
     website:
@@ -83,7 +88,7 @@ services:
         networks:
             - inception
         volumes:
-            - ./requirements/bonus/website/conf/:/etc/nginx/conf.d/
+            - ./requirements/bonus/website/conf/:/etc/nginx/conf.d/:ro
             - ./requirements/bonus/website/tools/:/var/www/html/
         restart: always
 
