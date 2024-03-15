@@ -26,7 +26,6 @@ services:
         networks:
         - inception
         volumes:
-            - ./requirements/tools/:/etc/nginx/ssl:ro
             - wp-vol:/var/www/html
         restart: always
   
@@ -84,7 +83,7 @@ services:
         build: ./requirements/bonus/website/.
         init: true
         ports:
-            - "4000:80"
+            - "4000:4000"
         networks:
             - inception
         volumes:
