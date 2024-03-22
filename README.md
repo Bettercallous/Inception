@@ -28,6 +28,8 @@ The goal of this project is to set up a small infrastructure with docker, follow
 ## Table of content
   [**∙ How to use ?**](#how-to-use)
 
+  [**∙ What is Docker ?**](#what-is-docker)
+
   [**∙ What is a container ?**](#what-is-a-container)
 
   [**∙ What is Docker Compose ?**](#docker-compose)
