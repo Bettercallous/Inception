@@ -73,6 +73,8 @@ $ make
 
 ❗ You'll also need a self-signed certificate since Nginx does require an SSL certificate to establish an HTTPS connection. You can make your own one for testing with a tool called mkcert. It's really easy, just follow the steps on their github repo: **https://github.com/FiloSottile/mkcert**
 
+---
+
 ## What is Docker ? <a name="what-is-docker"></a>
 Docker is a popular containerization technology that makes it easier to create, manage, and deploy containers. (Containerization technology existed in Linux before Docker, but Docker made it more user-friendly and streamlined the process) It is built on top of existing Linux technologies such as namespaces and cgroups, which are used to provide an isolated and controlled environment for running processes, while also ensuring that resource usage is limited and controlled.<br>
 Overall, Docker provides a powerful and flexible tool for building, deploying, and managing containerized applications across different platforms and environments.
@@ -539,3 +541,5 @@ server {
 * **CGI FastCGI and PHP-FPM: [**link**](https://medium.com/@miladev95/cgi-vs-fastcgi-vs-php-fpm-afbc5a886d6d#:~:text=FastCGI%20improves%20upon%20CGI%20by,security%20for%20serving%20PHP%20applications)**
 * **SSL: - https://www.cloudflare.com/learning/ssl/what-is-ssl/**
 * **TLS: https://youtu.be/AlE5X1NlHgg?list=PLBOAJ-0d96X7jxk-ulTQpqz5AzXYagiSK**
+
+---
