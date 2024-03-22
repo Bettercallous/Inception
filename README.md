@@ -28,7 +28,7 @@ The goal of this project is to set up a small infrastructure with docker, follow
 
 ---
 
-## Table of content
+## Table of contents
   [**∙ How to use ?**](#how-to-use)
 
   [**∙ What is Docker ?**](#what-is-docker)
