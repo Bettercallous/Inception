@@ -17,13 +17,16 @@
 
 ## 💡 About the project :
 
-The goal of this project is to set up a small infrastructure with docker, following specific rules, which consists of three services: MariaDB, WordPress, and Nginx.
+<p align="center">
+The goal of this project is to set up a small infrastructure with docker, following specific rules, which consists of three services: <br>
+	MariaDB, WordPress, and Nginx.
+</p>
 
 <p align="center" width="100%">
   <img src="/readme images/diagram" width="550" height="473" />
 </p>
 
-> I will provide straightforward explanations of the concepts introduced in this project.
+---
 
 ## Table of content
   [**∙ How to use ?**](#how-to-use)
@@ -48,13 +51,16 @@ The goal of this project is to set up a small infrastructure with docker, follow
 
   [**∙ What is NGINX ?**](#nginx)
 
-  [**∙ Ressources**](#ressources)
+  [**∙ Resources**](#resources)
+
+---
 
 ## How to use ?<a name="how-to-use"></a>
 * **Prerequisites :** Before diving in, you'll need to ensure you have the following prerequisites installed on your system: <br>
+
+	\- [**Make**](https://www.gnu.org/software/make/) <br>
 	\- [**Docker**](https://docs.docker.com/engine/install/) <br>
 	\- [**Docker Compose**](https://docs.docker.com/compose/install/) <br>
-	\- [**Make**](https://www.gnu.org/software/make/) <br>
 
 1. Clone the repository :
 
@@ -298,6 +304,8 @@ On the other hand, containers excel in **`resource efficiency and agility`**. Th
 
 In summary, virtual machines offer strong isolation and security but with higher resource overhead, while containers provide lightweight and agile deployment options but with less isolation. The choice between them depends on factors such as application requirements, resource constraints, and security considerations.
 
+---
+
 # MANDATORY PART
 ## MariaDB <a name="mariadb"></a>
 * MariaDB is an open-source relational database management system (RDBMS) derived from MySQL. It provides a structured environment for storing and organizing data using tables, rows, and columns, following the relational model. As a database server, MariaDB uses Structured Query Language (SQL) for querying and manipulating data.
@@ -531,15 +539,15 @@ server {
 
 ---
 
-### :link: Resources : <a name="ressources"></a>
+### :link: Resources : <a name="resources"></a>
 * **Docker docs: - https://docs.docker.com/guides/get-started/**
 * **Docker crash course: - https://www.youtube.com/playlist?list=PL4cUxeGkcC9hxjeEtdHFNYMtCpjNBm3h7**
 * **Article about Docker: - https://medium.com/@kmdkhadeer/docker-get-started-9aa7ee662cea**
 * **Docker Networking: - https://youtu.be/bKFMS5C4CG0?list=PLBOAJ-0d96X7jxk-ulTQpqz5AzXYagiSK**
-* **Best practices for building containers: https://cloud.google.com/architecture/best-practices-for-building-containers**
-* **The Compose Specification: https://github.com/compose-spec/compose-spec/blob/master/spec.md**
-* **CGI FastCGI and PHP-FPM: [**link**](https://medium.com/@miladev95/cgi-vs-fastcgi-vs-php-fpm-afbc5a886d6d#:~:text=FastCGI%20improves%20upon%20CGI%20by,security%20for%20serving%20PHP%20applications)**
+* **Best practices for building containers: - [**link**](https://cloud.google.com/architecture/best-practices-for-building-containers)**
+* **The Compose Specification: - https://github.com/compose-spec/compose-spec/blob/master/spec.md**
+* **CGI FastCGI and PHP-FPM: - [**link**](https://medium.com/@miladev95/cgi-vs-fastcgi-vs-php-fpm-afbc5a886d6d#:~:text=FastCGI%20improves%20upon%20CGI%20by,security%20for%20serving%20PHP%20applications)**
 * **SSL: - https://www.cloudflare.com/learning/ssl/what-is-ssl/**
-* **TLS: https://youtu.be/AlE5X1NlHgg?list=PLBOAJ-0d96X7jxk-ulTQpqz5AzXYagiSK**
+* **TLS: - https://youtu.be/AlE5X1NlHgg?list=PLBOAJ-0d96X7jxk-ulTQpqz5AzXYagiSK**
 
 ---
