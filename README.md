@@ -544,10 +544,10 @@ server {
 * **Docker crash course: - https://www.youtube.com/playlist?list=PL4cUxeGkcC9hxjeEtdHFNYMtCpjNBm3h7**
 * **Article about Docker: - https://medium.com/@kmdkhadeer/docker-get-started-9aa7ee662cea**
 * **Docker Networking: - https://youtu.be/bKFMS5C4CG0?list=PLBOAJ-0d96X7jxk-ulTQpqz5AzXYagiSK**
-* **Best practices for building containers: - [**link**](https://cloud.google.com/architecture/best-practices-for-building-containers)**
+* **Best practices for building containers: - [**cloud.google.com**](https://cloud.google.com/architecture/best-practices-for-building-containers)**
 * **The Compose Specification: - https://github.com/compose-spec/compose-spec/blob/master/spec.md**
-* **CGI FastCGI and PHP-FPM: - [**link**](https://medium.com/@miladev95/cgi-vs-fastcgi-vs-php-fpm-afbc5a886d6d#:~:text=FastCGI%20improves%20upon%20CGI%20by,security%20for%20serving%20PHP%20applications)**
+* **CGI FastCGI and PHP-FPM: - [**medium.com**](https://medium.com/@miladev95/cgi-vs-fastcgi-vs-php-fpm-afbc5a886d6d#:~:text=FastCGI%20improves%20upon%20CGI%20by,security%20for%20serving%20PHP%20applications)**
 * **SSL: - https://www.cloudflare.com/learning/ssl/what-is-ssl/**
-* **TLS: - https://youtu.be/AlE5X1NlHgg?list=PLBOAJ-0d96X7jxk-ulTQpqz5AzXYagiSK**
-
+* **TLSv1.2 and TLSv1.3: - https://youtu.be/AlE5X1NlHgg?list=PLBOAJ-0d96X7jxk-ulTQpqz5AzXYagiSK**
+* **Init process: [medium.com](https://medium.com/@BeNitinAgarwal/an-init-system-inside-the-docker-container-3821ee233f4b) - [www.padok.fr](https://www.padok.fr/en/blog/docker-processes-container)**
 ---
